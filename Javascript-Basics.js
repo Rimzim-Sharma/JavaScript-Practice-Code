@@ -46,6 +46,8 @@
        /* Datatypes in js
         Primitive Datatype
             1. Number
+                    - NaN
+                    - Infinity
             2. String
             3. Boolean
         Other Datatype
@@ -76,6 +78,18 @@
         
         var f = typeof(c);
         document.write(f);
+  
+        var a = 3/0;
+        //console.log(a);
+        document.write(a);      //infinity
+        var c = typeof(a);      //number
+        document.write(c);
+
+
+        var aa = 3*'a';
+        document.write(aa);     //NaN
+        var bb = typeof(aa);    //number
+        document.write(bb);
 
 
 /*      Operators
@@ -242,8 +256,42 @@
 
 */
         //  Array
-/*          var data = ["val1","val2","val3"];
-            document.write(data[0]);
-            document.write(data[1]);
-            document.write(data[2]);
+/*           //  Array
+        /*
+        arrays are quite different from c, c++.
+        here arrays are dynamic in nature, means we can add on values in array at runtime.
+        The size of array is not fixed.
+
+        we can have differnt dataypes also in one array (hetrogenious)
+        to add a Element we can use car.push("abc");
+        */
+/*
+          var data = ["val1","val2","val3"];
+            //document.write(data[0]);
+            //document.write(data[1]);
+            //document.write(data[2]);
+            data.push("val4");
+            data.push(3);
+            for( var i=0; i<data.length;i++){
+                document.write(data[i]);
+            }
+            document.write("**");
 */
+
+//            another way to define Array(not recommended)
+//            var arr1 = new arr("a","b","c");
+
+//      Objects
+        //JS is Oop, it support all concepts of oops.
+        
+        //traditional way
+ /*     var color = "color";
+        var num = "111";
+        var pattern = "horizontal";
+
+
+        function animal(){
+            document.write("animal method");
+        }
+*/
+
