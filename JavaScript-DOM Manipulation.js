@@ -1,6 +1,3 @@
-<html>
-    <head>
-        <script>
 // 1.           function myfunction(){
 //                //     alert("Button is clicked!");
 //                       var a = document.getElementById("myname").innerHTML;  
@@ -82,10 +79,6 @@
                            alert("out");
                         }
 */
-</script>
-    </head>
-<body>
-
 
 <!--
       1.    <button onclick="myfunction()">Click Me</button>
@@ -149,5 +142,3 @@
 
 
 
-</body>
-</html>
